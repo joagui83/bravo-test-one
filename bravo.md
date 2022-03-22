@@ -25,3 +25,6 @@ git add.
 git status
 git push origin main 
 ```
+
+### Documentation and Resources 
+-Bravo Syllabus
