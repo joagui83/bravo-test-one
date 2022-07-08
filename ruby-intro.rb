@@ -24,15 +24,17 @@
 
 
 
-puts 'You arrive at the entrence of the mine. Type one enter or leave'
- 
+puts "You arrive at the entrence of the mine. Choose your option [1] or [2]"
+# puts 1) 'enter'
+# puts 2) 'leave' 
 player = gets.chomp
-if player === 'enter'
-    puts = 'You are brave, welcome to your Adventure'
-elsif player === 'leave'
-    puts = 'Walk back home in shame you coward'
-else
-    puts = 'Player make a choice '
+
+
+if player == '1'
+    puts 'test'
+elsif player == '2'
+    puts 'test 2'
+
 end
 
 ##
