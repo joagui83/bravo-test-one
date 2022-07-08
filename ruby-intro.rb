@@ -24,18 +24,18 @@
 
 
 
-puts "You arrive at the entrence of the mine. Choose your option [1] or [2]"
-# puts 1) 'enter'
-# puts 2) 'leave' 
-player = gets.chomp
+# puts "You arrive at the entrence of the mine. Choose your option [1] or [2]"
+# # puts 1) 'enter'
+# # puts 2) 'leave' 
+# player = gets.chomp
 
 
-if player == '1'
-    puts 'test'
-elsif player == '2'
-    puts 'test 2'
+# if player == '1'
+#     puts 'test'
+# elsif player == '2'
+#     puts 'test 2'
 
-end
+# end
 
 ##
 
@@ -60,3 +60,18 @@ end
 # else 
 #     puts 'Player two wins'
 # end
+
+# You can also do it in easy way
+
+    # def sum(numbers)
+    #   return 0 if numbers.length < 1
+    #   result = 0
+    #   numbers.each { |num| result += num }
+    #   result
+    # end
+    nums_array1 = [42, 7, 27]
+    def sum(nums)
+        nums.inject(0, :+)
+      end
+
+p sum(nums_array1)

@@ -103,19 +103,41 @@
 // console.log(math2.addUp())
 
 //-------------------------------------------------------------
-class User {
-    constructor (firstName, lastName, credit) {
-        this.firstName = firstName,
-        this.lastName = lastName,
-        this.credit = credit
-    }
-    getFullName () {
-        let FullName = `${this.firstName} ${this.lastName} has ${this.credit} credits.`
-        return FullName 
-    }
-}
+// class User {
+//     constructor (firstName, lastName, credit) {
+//         this.firstName = firstName,
+//         this.lastName = lastName,
+//         this.credit = credit
+//     }
+//     getFullName () {
+//         let FullName = `${this.firstName} ${this.lastName} has ${this.credit} credits.`
+//         return FullName 
+//     }
+// }
 
 
-const jose = new User("Jose", "Aguilar", 44)
-console.log(jose)
-console.log(jose.getFullName())
+// const jose = new User("Jose", "Aguilar", 44)
+// console.log(jose)
+// console.log(jose.getFullName())
+const words = ["Apple", "Banana", "Plum", "Orange", "Kiwi"];
+const words2 = ["Mango", "Cherry", "Apricot", "Blueberry", "Peach"]
+ const letterA = "a"
+ const letterE ="e"
+// const letterE = "e"
+  
+const find = (arr, letter) =>{
+    const solution = []
+    arr.forEach((word) => {
+      if(word.includes(letter.toLowerCase())){
+        solution.push(word)
+      }
+      if(word.includes(letter.toUpperCase())){
+        solution.push(word)
+      }
+    })
+    return solution
+  }
+
+// const match = find(words,letterA)
+
+console.log(find(words,letterA))

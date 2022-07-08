@@ -280,13 +280,12 @@
 //   species: "Magikarp",
 //   pokemon_type: "Water"
 // }
-// Create a function called describePokemon that take an object like the ones above and uses destructuring to return a description of the Pokemon so that the following code snippet will run successfully:
+
 
 // const {species, pokemon_type} = pokeOne
 // const describePokemon = () => {
 //     return `${species} is ${pokemon_type} pokemon`
 // }
-
 // console.log(describePokemon(pokeOne))
 // Output: "Charmandar is a Fire pokemon"
 
@@ -328,17 +327,17 @@
 
 // Consider this variable:
 
-let learn = {
-    cohorts: {
-      cohort1: ["Alpha", "Zulu", "Charlie", "Delta", "Echo"],
-      cohort2: ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot"],
-      newArr: function() {
-          return [`cohort1 ${this.cohort1} cohort2 ${this.cohort2}`]
-      }
-    }
-  }
+// let learn = {
+//     cohorts: {
+//       cohort1: ["Alpha", "Zulu", "Charlie", "Delta", "Echo"],
+//       cohort2: ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot"],
+//       newArr: function() {
+//           return [`cohort1 ${this.cohort1} cohort2 ${this.cohort2}`]
+//       }
+//     }
+//   }
 
-  console.log(learn.cohorts.newArr())
+//   console.log(learn.cohorts.newArr())
 
   // Write the code that logs the name of your cohort.
   
@@ -360,3 +359,39 @@ let learn = {
   //   return `The ${animal.type} named ${animal.name} and is ${animal.age} years old`
   // })
   // console.log(animalFacts)
+
+  const people = [
+    { name: "ford prefect", occupation: "a hitchhiker" },
+    { name: "zaphod beeblebrox", occupation: "president of the galaxy" },
+    { name: "arthur dent", occupation: "a radio employee" }
+  ]
+
+
+const {name, occupation} = people
+ const objName = () => {
+
+ }
+const sent = () => {
+  return `${name} ${occupation}`
+}
+console.log(sent(people))
+
+// console.log(objName)
+
+// const pokeOne = {
+//   species: "Charmandar",
+//   pokemon_type: "Fire"
+// }
+
+// const pokeTwo = {
+//   species: "Magikarp",
+//   pokemon_type: "Water"
+// }
+
+
+// const {species, pokemon_type} = pokeOne
+// const describePokemon = () => {
+//     return `${species} is ${pokemon_type} pokemon`
+// }
+
+// console.log(describePokemon(pokeOne))
